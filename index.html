@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A customizable personal portfolio website" />
+    <title>Custom Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Custom Portfolio</p>
+          <h1 id="displayName">Your Name</h1>
+          <h2 id="displayTitle">Creative Developer</h2>
+          <p id="displayBio">
+            I create thoughtful web experiences that feel modern, useful, and memorable.
+          </p>
+          <div class="hero-actions">
+            <a id="websiteButton" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Visit my website</a>
+            <a class="btn btn-secondary" href="mailto:hello@example.com">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img id="profileImage" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Profile" />
+          <div class="hero-badge">Live portfolio</div>
+        </div>
+      </section>
+
+      <section class="customizer-card">
+        <div class="section-heading">
+          <p class="eyebrow">Customize</p>
+          <h3>Personalize your portfolio</h3>
+        </div>
+
+        <form id="portfolioForm">
+          <div class="form-grid">
+            <label>
+              Your name
+              <input id="nameInput" name="name" type="text" placeholder="Your Name" />
+            </label>
+
+            <label>
+              Job title
+              <input id="titleInput" name="title" type="text" placeholder="Creative Developer" />
+            </label>
+
+            <label class="full-width">
+              Short bio
+              <textarea id="bioInput" name="bio" rows="3" placeholder="Describe yourself..."></textarea>
+            </label>
+
+            <label class="full-width">
+              Website link
+              <input id="websiteInput" name="websiteUrl" type="url" placeholder="https://yourwebsite.com" />
+            </label>
+
+            <label class="full-width">
+              Image URL
+              <input id="imageUrlInput" name="imageUrl" type="url" placeholder="https://example.com/image.jpg" />
+            </label>
+
+            <label class="full-width">
+              Upload image
+              <input id="imageUpload" name="imageUpload" type="file" accept="image/*" />
+            </label>
+
+            <label>
+              Primary color
+              <input id="primaryColorInput" name="primaryColor" type="color" />
+            </label>
+
+            <label>
+              Accent color
+              <input id="accentColorInput" name="accentColor" type="color" />
+            </label>
+
+            <label>
+              Background color
+              <input id="backgroundColorInput" name="backgroundColor" type="color" />
+            </label>
+          </div>
+
+          <div class="actions-row">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" id="resetButton" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card">
+          <h4>Quick setup</h4>
+          <p>Update your name, bio, and colors in seconds. Your work is automatically saved in this browser.</p>
+        </article>
+        <article class="info-card">
+          <h4>Share-ready</h4>
+          <p>Use the website link field to point visitors to your main site or portfolio destination.</p>
+        </article>
+        <article class="info-card">
+          <h4>Image support</h4>
+          <p>Paste an image URL or upload a local image to instantly refresh the hero section.</p>
+        </article>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
